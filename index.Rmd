@@ -57,15 +57,18 @@ klippy::klippy(position = c("top", "right")) #- remotes::install_github("rlesur/
 ```
 
 <hr class="linea-black">
-
+<div class = "caja-1">
 Trabajo elaborado para la asignatura "Programación y manejo de datos en la era del Big Data" de la Universitat de València durante el curso 2020-2021. El repo del trabajo está [aquí](https://github.com/perezp44/trabajo_BigData){target="_blank"}. La página web de la asignatura y los trabajos de mis compañeros pueden verse [aquí](https://perezp44.github.io/intro-ds-20-21-web/07-trabajos.html){target="_blank"}.
 
 <!-- El párrafo de arriba has de dejarlo casi igual, 
         solo HAS de SUSTITUIR las 2 veces que aparece "perezp44" por tu usuario de Github-->
+</div>
 
-<hr class="linea-red">
+
+
 
 #  Introducción {.tabset .tabset-pills}
+<div class = "caja-1">
 A continuación explicaremos los indicadores económicos más relevantes en la macroecónomia, para ello utilizaremos datos extraídos principalmente de la base de datos del banco mundial. Todos los gráficos son de elaboración propia , en su mayoría utilizando la función ggplot() del paquete tidyverse.
 
 en este trabajo contestaremos a las siguientes cuestiones:
@@ -90,7 +93,7 @@ internacional y que pueda estar de actualidad. Por ejemplo,
 deslocalizaciones de empresas, guerras comerciales etc.
 
 Como podemos ver en el mapa, Alemania es el país de la UE con mayor PIB y su liderazgo se ha incrementado en los últimos años.
-
+</div>
 
 ## Mapa
 ![](./imagenes/map2.gif)
@@ -282,33 +285,40 @@ p
 
 # {-}
 
-En el siguiente Gráfico podemos ver como ha variado el tipo de cambio del euro con respecto a otras monedas del mundo a lo largo de los últimos 20 años. Como podemos observar hay cierta correlación entre los cambios con las diferentes monedas, además los tipos de cambio fluctúan mucho en un corto periodo de tiempo.
+<div class = "caja-1">
 
+En el siguiente Gráfico podemos ver como ha variado el tipo de cambio del euro con respecto a otras monedas del mundo a lo largo de los últimos 20 años. Como podemos observar hay cierta correlación entre los cambios con las diferentes monedas, además los tipos de cambio fluctúan mucho en un corto periodo de tiempo.
+</div>
 
 
 ### Paridad Cubierta 
+
+<div class = "caja-1">
 Hablamos de Paridad cubierta de los tipos de interés cuando al realizar una inversión en un depósito en dólar  , el riesgo que proviene de el tipo de cambio a futuro entre el dólar  y el € queda asegurado por un contrato realizado a futuro. Así nos aseguramos de que en el caso de realizar una inversión en una moneda extranjera los tipos de interés obtenidos no se pierdan por las fluctuaciones en el tipo de cambio.
 
 ![](./imagenes/pcub.png)
-
+</div>
 ### Paridad Descubierta
+
+<div class = "caja-1">
 La paridad descubierta de intereses es una condición de ausencia de arbitraje que describe un equilibrio en el que los inversores son indiferentes entre depósitos bancarios remunerados en dos monedas sin que se haya cubierto el riesgo cambiario. Al contrario que en la paridad cubierta, en este caso el riesgo originado por las fluctuaciones cambiarias entre las dos monedas no queda cubierto y aún así el inversor está indiferente entre un deposito en $ o en €.
 
 
 
 ![](./imagenes/pdesc.png)
-
+</div>
 
 
 # 2. PPA absoluta y relativa 
 
+<div class = "caja-1">
 Para entender la PPA absoluta hay que hablar primero de la Ley del Precio Único o LPU, es la condición por la cual el precio de un bien en un país es igual al precio de este bien en otro país, todo esto descontando costes de transporte, almacenamiento, etc. Esto nos asegura que no se produzca arbitraje ya que el mercado estará en equilibrio.
 
 ## PPA absoluta
 La PPA absoluta se produce cuando el valor de la misma cesta es el mismo en diferentes países, o lo que es lo mismo, cuando el tipo de cambio real es igual a 1.
 
 ![](./imagenes/ppa1.png)
-
+</div>
 
 ## PPA Relativa {.tabset .tabset-pills}
 
@@ -465,13 +475,14 @@ geom_line(aes(x= year,y = rpcs, colour = "Precios relativos")) +
 ```
 ## {-}
 
+<div class = "caja-1">
+
 La PPA relativa aparece cuando expresamos la anterior expresión en términos de crecimiento, Obteniendo la siguiente expresión:
 
 ![](./imagenes/ppa2.png)
 
-
 Si observamos la relación entre el precio relativo y los tipos de cambio Euro -dólar, podemos observar como a corto plazo (Verde) no se cumple la PPA relativa, pero a Largo plazo (azul) ambos tienden a disminuir, es decir, la evidencia empírica nos indica que la PPA relativa solo se cumple a largo plazo.
-
+</div>
 
 # 3. Desequilibrios globales
 ## PIB {.tabset .tabset-pills}
@@ -573,9 +584,9 @@ ggplot(pib,aes(year,PIB,group = 1)) +
 ```
 
 ## {-}
-
+<div class = "caja-1">
 Como podemos observar, la economía alemana ha crecido notablemente en los últimos 20 años, el período 2000-2007 está caracterizado por un rápido y continuo aumento del PIB, periodo en el que la unión europea empieza una etapa con mucha más integración y en la que Alemania sale muy beneficiada, sobre todo en lo que se refiere al comercio en la UE. La introducción del Euro como moneda única y la eliminación de las barreras arancelarias en los últimos años hace que Alemania aproveche esta oportunidad y se fortalezca como potencia en fabricación de maquinaria y tecnología punta en Europa. A partir de 2007 con la llegada de la crisis y los problemas internos de las economías europeas, el crecimiento alemán del PIB se frena considerablemente. El rescate de Grecia y el “casi” rescate del resto de las economías más afectadas por la crisis como España y Portugal entre otras, hace que la economía alemana tenga que pisar el freno.
-
+</div>
 
 ## Ahorro {.tabset .tabset-pills}
 
@@ -692,9 +703,9 @@ ggplot() +
 
 
 ## {-}
-
+<div class = "caja-1">
 Podemos Observar que el ahorro ha aumentado de manera considerable en los últimos 20 años.  Si nos centramos enn el periodo entre 2007 y 2011 (Crisis) el ahorro se vuelve muy volátil, establizandose en los últimos años con una tendencia ascendente.
-
+<div/>
 
 ## Inversión {.tabset .tabset-pills}
 ### Gráfico
@@ -790,9 +801,9 @@ ggplot(invest3) +
 ```
 
 ## {-}
-
+<div class = "caja-1">
 En cuanto a la inversión podemos destacar su estabilidad respecto al PIB en los últimos 20 años, moviéndose en valores que oscilan entre el 19% y el 23% del PIB en los últimos 20 años. En el 2000 podemos observar el valor mas alto de los últimos años, el mínimo está en 2007 cuando con la llegada de la crisis, la mayoría de las economías europeas entraron en recesión y se frenó bruscamente la inversión, Alemania no se vio tan afectada en este sentido como por ejemplo Grecia cuya inversión paso de un 26% del PIB a un 13% aproximadamente.
-
+</div>
 ## Ahorro e Inversión {.tabset .tabset-pills}
 ### Gráfico
 
@@ -877,10 +888,12 @@ corrplot(n,
 ```
 
 ## {-}
+<div class = "caja-1">
 
 Si observamos ambas variables en un mismo gráfico podemos observar cómo estas tienen un alto grado de correlación*, sobre todo a partir del 2007. 
 
 *Utilizando el método de Pearson y restringiendo las observaciones entre 2006 y 2019.
+</div>
 
 ## Balanza Comercial {.tabset .tabset-pills}
 
@@ -1053,9 +1066,10 @@ ggplot(impexp) +
 
 
 ## {-}
-
+<div class = "caja-1">
 Las exportaciones netas de Alemania han sido positivas en los últimos 20 años, es decir, Alemania exporta más de lo que importa. Produciéndose un crecimiento de la balanza comercial desde el 2000, e incluso durante la crisis, la balanza comercial alemana apenas ha tenido algún bajón.
 La crisis financiera de 2007 afecta a Alemania, aunque está se recupera con mucha facilidad.  Podemos ver como en 2007, disminuyen las importaciones debido al impacto en la renta, las exportaciones también disminuyen, pero en menor medida lo que ocasiona un aumento en la balanza comercial. En general el comercio internacional alemán disminuye, pero al disminuir más las importaciones que las exportaciones se produce una mejora en la balanza comercial. 
+</div>
 
 
 
@@ -1191,8 +1205,9 @@ ggplot(finan_inc4, aes(date,`Financial increase` ,group=1)) +
 ```
 
 ## {-}
+<div class = "caja-1">
 Alemania se beneficia de la globalización igual que el resto del mundo, es decir con el paso de los años el numero de transacciones con el resto del mundo aumentan exponencialmente. Los grandes actores en el comercio exterior en la economía alemana son China y los países del Este de Europa. Alemania se beneficia enormemente de la exportación de maquinaria a estos países que se desarrollan con rapidez y que contribuyen al crecimiento económico de Alemania con las compras de maquinaria que realizan los sectores productivos de estos países
-
+</div>
 ## Exportaciones con UE{.tabset .tabset-pills}
 ### Gráfico
 ```{r Gráfico exportaciones con UE}
@@ -1363,7 +1378,9 @@ o
 
 
 ## {-}
+<div class = "caja-1">
 En el caso concreto de Alemania, si hablamos de globalización financiera, no nos podemos olvidar de la creación de la Unión Europea y de la posterior creación de una moneda única, el Euro. Como podemos ver en el gráfico, tras la introducción del Euro a la economía europea, las exportaciones alemanas crecen de manera notoria, esto es debido a la eliminación de barreras arancelarias y la integración comercial que sufre Europa en el 2000, la introducción del euro facilita las transacciones intra europeas debido a que ya no hay que realizar un cambio de moneda y se eliminan costes de transacción.  Alemania pasa a ser el referente europeo y se especializa en exportación de bienes de alto valor añadido.
+</div>
 
 
 # 5. Balanza de pagos y deuda soberana 
@@ -1712,6 +1729,7 @@ g
 
 
 ## {-}
+<div class = "caja-1">
 La balanza de pagos está compuesta por la suma de:
 
 1.	La balanza por cuenta corriente
@@ -1719,6 +1737,7 @@ La balanza de pagos está compuesta por la suma de:
 2.	La cuenta de capital
 
 3.	La cuenta financiera.
+</div>
 
 ## Balanza por cuenta corriente {.tabset .tabset-pills}
 ### Gráfico 1
@@ -1948,13 +1967,14 @@ ggplot(bpcger2) +
 ```
 
 ## {-}
+<div class = "caja-1">
 Como podemos ver en el gráfico 1, la balanza por cuenta corriente de Alemania ha sido de las más altas, comparado con países como China, EE. UU., Japón, Argentina o Reino Unido. Ha aumentado notoriamente tras la crisis de 2007. Tiene una tendencia ascendente a largo plazo, a corto plazo se puede observar el efecto de las recesiones, aunque al igual que el PIB, se recupera rápido y vuelve a valores precrisis.
 
 La Balanza por cuenta corriente es uno de los indicadores macroeconómicos que muestra como interactúa un país con el resto del mundo.
 Está compuesta por la balanza comercial, servicios, transferencias y rentas. Si la balanza por cuenta corriente es positiva, significa que Alemania como país financia al resto del mundo con su capital (El caso contrario sería España).
 Como podemos ver, el saldo de la balanza por cuenta corriente de Alemania no ha parado de subir desde el año 2000, esto se debe en gran medida al gran papel de las exportaciones en la economía alemana y como está ha sabido aprovechar el comercio europeo.
 
-
+</div>
 
 
 ## Cta. de capital {.tabset .tabset-pills}
@@ -2074,14 +2094,14 @@ ggplot(ctacap) +
   )
 ```
 ## {-}
-
+<div class = "caja-1">
 La cuenta de capital es igual a: 
 Cuenta de capital = Cambio en la propiedad extranjera de activos domésticos - Cambio en la propiedad doméstica de activos extranjeros
 Podemos ver como no está estable en ningún periodo y tampoco tiene una tendencia definida.
 
 
 La suma de estas tres cuentas es igual a 0, como podemos ver en el gráfico ambos lados están equilibrados.
-
+</div>
 
 
 ## Cta. financiera {.tabset .tabset-pills}
@@ -2197,8 +2217,10 @@ ggplot(ctafin) +
 
 
 ## {-}
-
+<div class = "caja-1">
 La cuenta financiera, como se expone en la sexta edición del Manual de Balanza de Pagos publicado por el Fondo Monetario Internacional “en la cuenta financiera se registran las transacciones relativas a los activos y pasivos financieros que tienen lugar entre residentes y no residentes” por lo que actúa prácticamente igual que la Inversión analizada anteriormente, en 2007 con la llegada de la crisis cae, y a partir de 2010 en apenas 2 años vuelve a recuperar valores precrisis.
+</div>
+
 
 
 ## Deuda soberana {.tabset .tabset-pills}
@@ -2275,9 +2297,13 @@ gd
 
 
 ## {-}
-
+<div class = "caja-1">
  La deuda alemana, al contrario que la de la mayoría de los países europeos, ha estado bajo control en los últimos 20 años, podemos ver un período de expansión tras la crisis de 2007, en la que se busca mediante un incremento del gasto público reactivar la economía.
 Tras este periodo expansivo, vemos como a partir de 2013, empieza un periodo de política fiscal de austeridad y Alemania pasa a tener superávit presupuestario por 6 años consecutivos hasta inicios del 2020 con la llegada de la pandemia.
+</div>
+
+<br>
+
 
 
 
@@ -2449,11 +2475,15 @@ ggplot(infeu,aes(año,inflacion,group=1)) +
 ```
 
 # {-}
+<div class = "caja-1">
 La política monetaria de la mayoría de los países europeos está centralizada, es decir, el BCE tiene el control total de la política monetaria del Euro. La UE tiene una serie de normas, una de ellas es una inflación objetivo del 2%.
 
 Como podemos ver en el gráfico, la inflación de la UE desde su creación se ha conseguido disminuir notablemente, aunque tras la crisis, debido a los bajos tipos de interés y la depresión de la economía, hemos podido observar periodos de deflación que resultan dañinos para la economía en su conjunto, es por ello que el BCE ha buscado una política monetaria expansiva mediante la compra de deuda de los países mas afectados por la crisis. Además, el BCE ha realizado numerosos préstamos en los últimos años para financiar el consumo, aunque ha resultado ciertamente efectivo, no están del todo claro sus efectos a largo plazo.
 
 Como hemos comentado mas arriba, Alemania tras entrar en la crisis estimuló su economía con una política fiscal expansiva que buscaba reactivar su economía. Tras alcanzar niveles de PIB y crecimiento precrisis, hizo un cambio brusco en su política fiscal y comenzó a tener un Superávit en sus presupuestos, reduciendo así su deuda Pública. Alemania ha conseguido un superávit presupuestario en los últimos 6 años, no ha sido hasta la llegada de la pandemia cuando ha pasado a tener déficit. 
+</div>
+
+<br>
 
 
 
@@ -2820,15 +2850,20 @@ ggplot(paroesp,aes(año,paro,group=1)) +
 
 
 ## {-}
-
+<div class = "caja-1">
 El mercado laboral europeo ha demostrado ser de los más fuertes del continente europeo, con una continua creación de empleo y en la que apenas se pudo ver algún impacto durante la crisis de 2007. No ha sido hasta la llegada de la Pandemia en febrero de 2020, es en este momento cuando el mercado de trabajo alemán pisa el freno y comienza a aumentar la Tasa de desempleo por primera vez en más de 10 años. Cabe destacar la migración durante estos últimos años de gran parte de los trabajadores al sector servicios, cayendo el peso del empleo en los sectores productivos, esto se produce en gran medida debido a la importancia del factor tecnológico en la producción alemana. Aunque pueda parecer que la tecnología está destruyendo empleos, en realidad lo que está haciendo es desplazarlos a otros sectores productivos donde hace falta más mano de obra.
 Otro de los factores que ha influido durante los últimos años en la creación de empleo ha sido la gran oleada de trabajadores inmigrantes que han llegado al país con la crisis, esto ha llevado a la baja a los salarios creando mas empleo y fortaleciendo el mercado de trabajo, aunque una bajada de salarios pueda resultar negativa para los trabajadores, esto se compensa con el trabajo creado y con las mayores ganancias de ciertos sectores debido a la bajada de salarios, sobre todo en lo que respecta a mano de obra no cualificada.
 
+</div>
 
+<br>
 
 
 # Bibliografía
-•	[Datos obtenidos en su mayoría del Banco Mundial](https://datos.bancomundial.org/pais/alemania)
+
+<div class = "caja-medium-aquamarine">
+
+•	[Datos del Banco Mundial](https://datos.bancomundial.org/pais/alemania)
 
 •	[Noticia aumento tasa de paro Alemania](https://www.eleconomista.es/economia/noticias/10972951/01/21/El-coronavirus-acaba-con-14-anos-seguidos-de-creacion-de-empleo-en-Alemania.html)
 
@@ -2837,4 +2872,8 @@ Otro de los factores que ha influido durante los últimos años en la creación 
 •	[Política monetaria Europa](https://www.ecb.europa.eu/ecb/tasks/monpol/html/index.es.html)
 
 •	[Trades and Manufacturing Jobs in Germany](http://ftp.iza.org/dp10469.pdf)
+
+</div>
+
+<br>
 
