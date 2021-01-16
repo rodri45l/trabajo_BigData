@@ -55,9 +55,35 @@ df_pwr5 <- inner_join(world, df_pwr20, by= c("sovereignt" = "sovereignt")) %>% f
 
 df_pwr9 <- df_pwr5 %>% select(sovereignt, year, value)
 p <- ggplot() + geom_sf(data = df_pwr9, aes(fill = value)) +
-  labs(title = "Mapa del mundo energias renovables 1990 - 2015",
+  labs(title = "Evolucíon del PIB en Europa 1990 - 2019",
        caption = "Datos provenientes de World Bank") +
-  scale_fill_viridis(direction = 1) +
-  transition_time(year) + labs(title = "Porcentaje de energia renovable por país", subtitle = "Año:{as.integer(frame_time)}"  ) +
-  coord_sf(xlim = c(-17, 40), ylim = c(38, 70))
-p
+  scale_fill_viridis(direction = 1,option = "C") +
+  transition_time(year) + labs(title = "Evolucíon del PIB en Europa 1990 - 2019", subtitle = "Año:{as.integer(frame_time)}"  ) +
+  coord_sf(xlim = c(-17, 40), ylim = c(38, 70)) +
+  theme(
+    panel.background = element_rect(fill ='#272635' ,
+                                    colour = '#272635',
+                                    size = 0.5, linetype = "solid"),
+    plot.background = element_rect(fill ='#272635' ,
+                                   colour = '#272635',
+                                   size = 0.5, linetype = "solid"),
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid',
+                                    colour = '#CECECE'), 
+    panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
+                                    colour = '#CECECE'),
+    axis.text.x =element_text(colour='#CECECE'),
+    axis.text.y =element_text(colour='#CECECE'),
+    plot.title = element_text(colour = '#CECECE'),
+    axis.title.x = element_text(colour = "#CECECE"),
+    axis.title.y = element_text(colour = "#CECECE"),
+    # panel.border = element_rect(fill='#272635')
+  )
+
+anim1 <- animate(p)
+
+anim_save("./imagenes/map2.gif", anim1)
+
+anim <- animate(p)
+magick::image_write(anim, path="./imagenes/map.gif")
+
+#![](./imagenes/map.gif)
