@@ -736,7 +736,7 @@ ggplot() +
 
 ## {-}
 <div class = "caja-1">
-Podemos Observar que el ahorro ha aumentado de manera considerable en los últimos 20 años.  Si nos centramos enn el periodo entre 2007 y 2011 (Crisis) el ahorro se vuelve muy volátil, establizandose en los últimos años con una tendencia ascendente.
+Podemos Observar que el ahorro ha aumentado de manera considerable en los últimos 20 años.  Si nos centramos en el periodo entre 2007 y 2011 (Crisis) el ahorro se vuelve muy volátil, establizandose en los últimos años con una tendencia ascendente.
 <div/>
 
 ## Inversión {.tabset .tabset-pills}
