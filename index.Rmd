@@ -297,7 +297,8 @@ En el siguiente Gráfico podemos ver como ha variado el tipo de cambio del euro 
 Hablamos de Paridad cubierta de los tipos de interés cuando al realizar una inversión en un depósito en yenes  , el riesgo que proviene de el tipo de cambio a futuro entre el yen  y el € queda asegurado por un contrato realizado a futuro. Así nos aseguramos de que en el caso de realizar una inversión en una moneda extranjera los tipos de interés obtenidos no se pierdan por las fluctuaciones en el tipo de cambio.
 
 
-$$ (1 + i_{\alpha}) = (1 + i_{\epsilon})\frac{F_{\frac{\alpha}{\epsilon}}}{E_{\frac{\alpha}{\epsilon}}} $$
+$$ \color{#6BFFB8}{
+(1 + i_{\alpha}) = (1 + i_{\epsilon})\frac{F_{\frac{\alpha}{\epsilon}}}{E_{\frac{\alpha}{\epsilon}}}} $$
 
 </div>
 
@@ -312,6 +313,7 @@ La paridad descubierta de intereses es una condición de ausencia de arbitraje q
 <div class = "caja-1">
 
 \begin{align}
+\color{#6BFFB8}{
 E_{\frac{\alpha}{\epsilon}} = E_{\frac{\alpha}{\epsilon}}^{e} \frac{1+i_{\epsilon}}{1+i_{\alpha}}
 
 
@@ -320,6 +322,7 @@ E_{\frac{\alpha}{\epsilon}} = E_{\frac{\alpha}{\epsilon}}^{e} \frac{1+i_{\epsilo
 
 
 i_{\alpha} = i_{\epsilon} + \frac{\bigtriangleup E_{\frac{\alpha}{\epsilon}}^{e}}{E_{\frac{\alpha}{\epsilon}}}
+}
 \end{align}
 
 </div>
@@ -334,9 +337,10 @@ Para entender la PPA absoluta hay que hablar primero de la Ley del Precio Único
 La PPA absoluta se produce cuando el valor de la misma cesta es el mismo en diferentes países, o lo que es lo mismo, cuando el tipo de cambio real es igual a 1.
 
 \begin{align}
+\color{#6BFFB8}{
 
 E_{\frac{\alpha}{\epsilon}} =     \frac{P_{\alpha}}{P_{\epsilon}}
-
+}
 \end{align}
 
 
@@ -505,7 +509,7 @@ La PPA relativa aparece cuando expresamos la anterior expresión en términos de
 
 \begin{align}
 
-    \underbrace{\frac{\bigtriangleup E_{\frac{\alpha}{\epsilon},t}}{E_{\frac{\alpha}{\epsilon},t}}}_\text{Tasa de depreciación del tipo de cambio nominal} = \underbrace{\pi_{\alpha,t} - \pi_{\epsilon,t} }_\text{Diferencial de Inflación}
+    \underbrace{\color{#6BFFB8}{\frac{\bigtriangleup E_{\frac{\alpha}{\epsilon},t}}{E_{\frac{\alpha}{\epsilon},t}}}}_\text{Tasa de depreciación del tipo de cambio nominal} = \underbrace{\color{#6BFFB8}{\pi_{\alpha,t} - \pi_{\epsilon,t} }}_\text{Diferencial de Inflación}
     
       
 
